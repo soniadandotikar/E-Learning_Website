@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+<body>
+  <header>
+		<ul class="navbar">
+      <li><a href="#" style="font-weight:700;font-size:large;font-family: Georgia, 'Times New Roman', Times, serif;">Learn@Home</a></li>
+      <div class="search-container">
+        <input type="text" placeholder="Enter your search ">
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#courses">Courses</a></li>
+			<li><a href="#assessment">Assessments</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li><a href="login.html" style="color: #fff;background-color:#fbbc04;padding: 5px 10px;">Log in</a></li>		
+      </ul>
+	</header>
+  <main>
+      <img src="img.jpg">
+    <div class="form-overlay">
+      <a href="signup.html">Sign-up/Register</a>
+      <a href="/upload/upload.html">Upload</a>
+    </div>
+    <div class="about" id="about">
+      <div class="div">
+      <h1>About</h1>
+      <h2>"Empower Your Journey, Unleash Boundless Learning"</h2>
+      <p>Join us on this educational journey and embrace the power of accessible knowledge. Explore our platform and unlock the door to boundless learning opportunities. We are committed to empowering learners, fostering growth, and embracing the future of e-learning - together, let's make education a transformative force for all.</p>
+      <a href="#" class="cta-btn">Know More</a>
+    </div>
+    <div class="div">
+        <img src="/about.jpg" style="height: 350px;opacity:1; margin:0;">
+    </div>
+    </div>
+    <div class="courses" id="courses">
+      <button><a href="/Courses/courses.html">Explore our Courses</a></button>
+    </div>
+    <div class="assessment" id="assessment">
+      <img id="test" src="/Assessment/assessment.png">
+      <div style="margin: 100px;">
+        <a href="/Assessment/assessments.html">Test your learning here</a>
+        <p>Our assessments are designed to test your knowledge and understanding of the course material. They include various question types to evaluate your learning progress. Use this opportunity to self-assess, identify strengths, and target areas for improvement. Embrace learning as a journey, and remember that assessments are a positive step toward growth and knowledge enhancement. Good luck!</p>
+      </div>
+    </div>
+    
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <a href="contact.html" id="contact"><h4>Contact Details</h4></a>
+          <p><i class="bx bx-envelope"></i> Email: contact@example.com</p>
+          <p><i class="bx bx-phone"></i> Phone: +1 123-456-7890</p>
+          <p><i class="bx bx-map"></i> Address: 123 Street, City, Country</p>
+        </div>
+        <div class="footer-admin">
+          <a href="users.html"><h4>Admin Dashboard</h4></a>
+        </div>
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="last-text">
+        <p>© Developed 2023 by Sonia Dandotikar</p>
+      </div>
+		
+	
+	<a href="#home" class="scroll-top">
+		<i class='bx bx-up-arrow-alt' style="font-size:25px;"></i>
+	</a>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    // Function to add ScrollReveal effect to elements with the specified class
+    function addScrollReveal(classname) {
+      const elements = document.querySelectorAll(classname);
+      const sr = ScrollReveal({
+        distance: '30px',
+        duration: 2500,
+        reset: true
+      });
+      
+      // Reveal your elements using ScrollReveal
+      sr.reveal('.home-text', { delay: 200, origin: 'left' });
+      sr.reveal('.home-img', { delay: 200, origin: 'right' });
+      sr.reveal('.container, .about, .menu, .contact', { delay: 200, origin: 'bottom' });
+    }
+      
+    // Scroll to top functionality
+const scrollTopButton = document.querySelector('.scroll-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollTopButton.style.display = 'block';
+  } else {
+    scrollTopButton.style.display = 'none';
+  }
+});
+
+scrollTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+  </script>
+  
+</body>
+</html>

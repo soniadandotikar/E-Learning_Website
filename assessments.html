@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assessment</title>
+  <link rel="stylesheet" href="/Assessment/assessment.css"> 
+</head>
+<body>
+  <h1>Assessment</h1>
+  <p>This page contains the assessment for the course.</p>
+  <ul class="questions">
+    <li>
+      <p>Question 1:  What programming languages are commonly used for front-end development?</p>
+      <label><input type="radio" name="q1" value="Java"> Java</label>
+      <label><input type="radio" name="q1" value="Python"> Python</label>
+      <label><input type="radio" name="q1" value="HTML,CSS,and JavaScript"> HTML,CSS,and JavaScript</label>
+      <label><input type="radio" name="q1" value="Ruby"> Ruby</label>
+      <button onclick="checkAnswer('q1')">Check Answer</button>
+    </li>
+    <li>
+      <p>Question 2: Which of the following is a supervised learning algorithm?</p>
+      <label><input type="radio" name="q2" value="K-Means"> K-Means</label>
+      <label><input type="radio" name="q2" value="Decision Tree"> Decision Tree</label>
+      <label><input type="radio" name="q2" value="KNN"> KNN</label>
+      <label><input type="radio" name="q2" value="SVM"> SVM</label>
+      <button onclick="checkAnswer('q2')">Check Answer</button>
+    </li>
+    <li>
+      <p>Question 3: Which of the following is not a step in the data science process?</p>
+      <label><input type="radio" name="q3" value="Data Collection"> Data Collection</label>
+      <label><input type="radio" name="q3" value="Data Analysis"> Data Analysis</label>
+      <label><input type="radio" name="q3" value="Data Visualization"> Data Visualization</label>
+      <label><input type="radio" name="q3" value="Data Deletion"> Data Deletion</label>
+      <button onclick="checkAnswer('q3')">Check Answer</button>
+    </li>
+    <li>
+      <p>Question 4: Which of the following is not a front-end framework used in full stack development?</p>
+      <label><input type="radio" name="q4" value="React">  React</label>
+      <label><input type="radio" name="q4" value="Angular"> Angular</label>
+      <label><input type="radio" name="q4" value="Vue.js"> Vue.js</label>
+      <label><input type="radio" name="q4" value="Django"> Django</label>
+      <button onclick="checkAnswer('q4')">Check Answer</button>
+    </li>
+    <li>
+      <p>Question 5: What does SaaS stand for in cloud computing?</p>
+      <label><input type="radio" name="q5" value="Software as a Service">  Software as a Service</label>
+      <label><input type="radio" name="q5" value="Security as a Service">  Security as a Service</label>
+      <label><input type="radio" name="q5" value="Storage as a Service"> Storage as a Service</label>
+      <label><input type="radio" name="q5" value="System as a Service"> System as a Service</label>
+      <button onclick="checkAnswer('q5')">Check Answer</button>
+    </li>
+    <li>
+      <p>Question 6: How do you check the type of a variable in Python?</p>
+      <label><input type="radio" name="q6" value="typeof(variable)"> typeof(variable)</label>
+      <label><input type="radio" name="q6" value="variable.type()"> variable.type()</label>
+      <label><input type="radio" name="q6" value="type(variable)"> type(variable)</label>
+      <label><input type="radio" name="q6" value="variable_type()"> variable_type()</label>
+      <button onclick="checkAnswer('q6')">Check Answer</button>
+    </li>
+  </ul>
+
+  
+  <button id="btn" onclick="submitAnswers()">Submit</button>
+
+  <script src="/script.js"></script> 
+</html>

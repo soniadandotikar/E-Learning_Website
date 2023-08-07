@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interesting Courses</title>
+    <link rel="stylesheet" href="courses.css"> 
+</head>
+<body>
+    <h2>Explore Our Courses</h2>
+    <section class="course" id="course">
+        <div class="course-card" onclick="showCourseDetails('course1')">
+            <img src="/Courses/course1.jpeg" alt="Course 1">
+            <h3>Web Development</h3>
+        </div>
+        <div class="course-card" onclick="showCourseDetails('course2')">
+            <img src="/Courses/course2.jpeg" alt="Course 2">
+            <h3>Machine Learning</h3>
+        </div>
+        <div class="course-card" onclick="showCourseDetails('course3')">
+            <img src="/Courses/course3.jpeg" alt="Course 3">
+            <h3>Data Science</h3>
+        </div>
+        <div class="course-card" onclick="showCourseDetails('course4')">
+            <img src="/Courses/course4.jpeg" alt="Course 4">
+            <h3>Full Stack Development</h3>
+        </div>
+        <div class="course-card" onclick="showCourseDetails('course5')">
+        <img src="/Courses/course5.jpeg" alt="Course 5">
+        <h3>Cloud Computing</h3>
+    </div>
+    <div class="course-card" onclick="showCourseDetails('course6')">
+        <img src="/Courses/course6.jpeg" alt="Course 6">
+        <h3>Python Programming</h3>
+    </div>
+    </section>
+    <button id="btn">Load More</button>
+
+    <section class="course-details" id="courseDetails">
+        <h2>Course Details</h2>
+        <div id="course1" class="details hidden">
+            <h3>Web Development Details</h3>
+            <p>Web Development course covers various topics under Web Development such as Database Management, Web Publishing, Web Design, and Web Programming. Web Development Courses can be of various types, namely Full Stack Web Development, Front End Web Development, Back End Web Development, Web Application, etc.</p>
+        </div>
+        <div id="course2" class="details hidden">
+            <h3>Machine Learning Details</h3>
+            <p>Machine learning for data science syllabus encompasses areas of study such as linear algebra, statistics, probability, programming for data analysis, etc. </p>
+        </div>
+        <div id="course3" class="details hidden">
+            <h3>Data Science Details</h3>
+            <p>Data Science course syllabus for beginners covers basic and advanced concepts of data analytics, machine learning, statistics, and programming languages like Python or R. It also teaches students how to interpret large datasets and identify patterns to create predictive models. data security</p>
+        </div>
+        <div id="course4" class="details hidden">
+            <h3>Full Stack Development Details</h3>
+            <p>A full stack developer requires skills such as Front-end Languages and Frameworks (HTML, CSS, JavaScript), Backend Technologies and Frameworks (NodeJS, ExpressJS, Django, Flask, C++), Database Management Systems (MySQL, SQL SERVER and PostgreSQL, MongoDB, and Oracle Database), Version Control, and Web Hosting Platforms </p>
+        </div>
+        <div id="course5" class="details hidden">
+        <h3>Cloud Computing Details</h3>
+        <p>This course demystifies cloud infrastructure components, including virtual machines, networking, and storage. You'll gain foundational knowledge of Hybrid, Multicloud, Microservices, Serverless, DevOps, Cloud Native, Application Modernization, and cloud security and monitoring.</p>
+    </div>
+    <div id="course6" class="details hidden">
+        <h3>Python Programming Details</h3>
+        <p>Python covers a vast area of expertise such as Introduction to Python and Computer Programming, Data Types, Variables, Basic Operators, Boolean Values, Conditional Execution, Loops, Lists and many more.</p>
+    </div>
+    </section>
+
+    <script src="/script.js"></script> 
+</body>
+</html>
